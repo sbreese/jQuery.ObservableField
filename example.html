@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery immediately_observe_field</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="jquery.immediately_observe_field.js"></script>
+
+  <script type="text/javascript">
+
+  $(function() {
+    // Executes a callback detecting changes with a frequency of a tenth of 1 second
+    $("input,select").immediately_observe_field(.1, function( ) {
+      alert('Change immediately observed! new value: ' + this.value );
+    });
+  });
+
+  </script>
+</head>
+<body>
+
+  <h1>
+  jQuery immediately_observe_field
+  </h1>
+
+  <form>
+
+    <p>
+      <label for="item1">Item 1:</label>
+      <input type="text" id="item1" value="">
+    </p>
+    <p>
+      <label for="item2">Item 2:</label>
+      <select id="item2" >
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </p>
+
+  </form>
+
+</body>
+</html>
