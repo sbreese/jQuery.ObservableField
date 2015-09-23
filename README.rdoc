@@ -1,23 +1,23 @@
-== jquery.immediately_observe_field
+== jquery.observe_field_real_time
 
-This is a jQuery plugin that implements a way to observe form fields on a given frequency,
+This is a jQuery plugin that implements a way to observe form fields on a near real-time frequency,
 instead of having to rely on blur (too cumberstone for the user) or keyup (does not account 
 for pasting of values or programmettically entered values).
 
-The frequency has to be specified in seconds.
+The frequency has to be specified in milliseconds.  (1 second = 1000 milliseconds)
 
-Each onkeyup event resets the counter, so a frequency of more than 1 second will result 
+Each onkeyup event resets the counter, so a frequency of more than 1000 milliseconds will result 
 on a not very responsive interface.
 
 
 == Installation
 
 Make sure that jQuery is included before this plugin. Then 
-include "jquery.immediately_observe_field.js" with the following code.
+include "jquery.observe_field_real_time.js" with the following code.
 
 Assuming that you copied it on /js/:
 
-    <script src="/js/jquery.jquery.immediately_observe_field.js"></script>
+    <script src="/js/jquery.jquery.observe_field_real_time.js"></script>
 
 == Example
 
@@ -29,4 +29,4 @@ This is an improvement on splendeo's jquery.observe_field plugin.
 
 == License
 
-jquery.jquery.immediately_observe_field is licensed under the MIT license:
+jquery.jquery.observe_field_real_time is licensed under the MIT license:
