@@ -1,4 +1,4 @@
-= jquery.immediately_observe_field
+== jquery.immediately_observe_field
 
 This is a JQuery plugin that implements a way to observe form fields on a given frequency,
 instead of having to rely on blur (too cumberstone for the user) or keyup (does not account 
