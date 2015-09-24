@@ -1,4 +1,4 @@
-== jquery.observe_field_real_time
+== jQuery.ObservableField
 
 This is a jQuery plugin that implements a way to observe form fields on a near real-time frequency,
 instead of having to rely on blur (too cumbersome for the user) or keyup (does not account 
@@ -13,11 +13,11 @@ on a not very responsive interface.
 == Installation
 
 Make sure that jQuery is included before this plugin. Then 
-include "jquery.observe_field_real_time.js" with the following code.
+include "jQuery.ObservableField.js" with the following code.
 
 Assuming that you copied it on /js/:
 
-    <script src="/js/jquery.jquery.observe_field_real_time.js"></script>
+    <script src="/js/jQuery.ObservableField.js"></script>
 
 == Example
 
@@ -29,4 +29,4 @@ This is an improvement on splendeo's jquery.observe_field plugin.
 
 == License
 
-jquery.jquery.observe_field_real_time is licensed under the MIT license:
+jQuery.ObservableField is licensed under the MIT license:
