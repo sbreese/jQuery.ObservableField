@@ -1,8 +1,8 @@
-// jquery.observe_field_real_time.js
+// jQuery.ObservableField.js
 
 (function( $ ){
 
-  jQuery.fn.observe_field_real_time = function(frequency, callback) {
+  jQuery.fn.ObservableField = function(frequency, callback) {
 
     return this.each(function(){
       var $this = $(this);
