@@ -9,9 +9,12 @@
   <script type="text/javascript">
 
   $(function() {
-    // Executes a callback detecting changes with a frequency of 100 milliseconds (tenth of 1 second)
-    $("input,select").ObservableField(100, function( ) {
-      alert('Change observed near real-time! new value: ' + this.value );
+    // Executes a callback detecting changes with a frequency of 100 milliseconds (tenth of a second)
+    $("input").ObservableField(100, function( ) {
+      $("#msg").html('Input change observed! New value: ' + this.value ).show().delay(2000).fadeOut(1000);
+    });
+    $("select").ObservableField(100, function( ) {
+      alert('Select change observed! New value: ' + this.value );
     });
   });
 
@@ -27,15 +30,15 @@
 
     <p>
       <label for="item1">Item 1:</label>
-      <input type="text" id="item1" value="">
+      <input type="text" id="item1" value=""> <span id="msg"></span>
     </p>
     <p>
       <label for="item2">Item 2:</label>
       <select id="item2" >
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="PHP">PHP</option>
+        <option value="Node.js">Node.js</option>
+        <option value="MongoDB">MongoDB</option>
       </select>
     </p>
 
