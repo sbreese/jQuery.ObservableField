@@ -1,4 +1,4 @@
-== jQuery.ObservableField
+== jQuery.ObservableField.js
 
 This is a jQuery plugin that implements a way to observe form fields on a near real-time frequency,
 instead of having to rely on blur (too cumbersome for the user) or keyup (does not account 
