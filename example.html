@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>jQuery observe_field_real_time</title>
+  <title>jQuery ObservableField</title>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="jquery.observe_field_real_time.js"></script>
+  <script src="jQuery.ObservableField.js"></script>
 
   <script type="text/javascript">
 
   $(function() {
     // Executes a callback detecting changes with a frequency of 100 milliseconds (tenth of 1 second)
-    $("input,select").observe_field_real_time(100, function( ) {
+    $("input,select").ObservableField(100, function( ) {
       alert('Change observed near real-time! new value: ' + this.value );
     });
   });
@@ -20,7 +20,7 @@
 <body>
 
   <h1>
-  jQuery observe_field_real_time
+  jQuery ObservableField
   </h1>
 
   <form>
