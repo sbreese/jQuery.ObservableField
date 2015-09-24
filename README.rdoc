@@ -1,7 +1,7 @@
 == jquery.observe_field_real_time
 
 This is a jQuery plugin that implements a way to observe form fields on a near real-time frequency,
-instead of having to rely on blur (too cumberstone for the user) or keyup (does not account 
+instead of having to rely on blur (too cumbersome for the user) or keyup (does not account 
 for pasting of values or programmettically entered values).
 
 The frequency has to be specified in milliseconds.  (1 second = 1000 milliseconds)
